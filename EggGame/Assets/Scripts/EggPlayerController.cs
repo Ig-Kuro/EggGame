@@ -7,6 +7,11 @@ public class EggPlayerController : MonoBehaviour
     public float maxChargeTime = 1.5f;
     public float repulsionForce = 5f;
 
+    [Header("Efeitos")]
+    public AudioSource jumpSoundSource;
+    public AudioClip jumpSoundClip;
+    public ParticleSystem jumpVFX;
+
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
@@ -96,7 +101,19 @@ public class EggPlayerController : MonoBehaviour
                 rb.AddForce(jumpDirection * jumpForce, ForceMode.Impulse);
 
                 isChargingJump = false;
+                if (jumpSoundSource != null && jumpSoundClip != null)
+                {
+                    jumpSoundSource.PlayOneShot(jumpSoundClip);
+                }
+
+                if (jumpVFX != null)
+                {
+                    jumpVFX.Play();
+                }
+
+                isChargingJump = false;
             }
+
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
