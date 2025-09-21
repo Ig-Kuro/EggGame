@@ -468,6 +468,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8679795708877745120, guid: 53a7642b9424c5f4a9604fe77411e0cc, type: 3}
+      propertyPath: groundCheckRadius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679795708877745120, guid: 53a7642b9424c5f4a9604fe77411e0cc, type: 3}
       propertyPath: trajectoryExtensionFactor
       value: 2
       objectReference: {fileID: 0}

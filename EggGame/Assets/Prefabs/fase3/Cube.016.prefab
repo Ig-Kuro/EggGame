@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1384605575002381178}
   - component: {fileID: 2919555794268814696}
   - component: {fileID: 4327452340234488640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,5 +106,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.518717, y: 3.3682327, z: 6.5739527}
-  m_Center: {x: -0.04136835, y: 0.07822125, z: -0.63715565}
+  m_Size: {x: 9.34696, y: 1.3820128, z: 8.180501}
+  m_Center: {x: 0.023046581, y: 0.6387549, z: -1.4404275}
